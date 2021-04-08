@@ -21,6 +21,7 @@ class AddViewController: NSViewController, NSTextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         tagField.isEditable = true
+        test.stringValue = ""
     }
 
     override var representedObject: Any? {
