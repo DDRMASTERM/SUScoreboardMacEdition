@@ -1120,7 +1120,11 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
                     dest.delegate = self
                 }
             }
-            
+            if(segue.identifier! == "SponsorSegue"){
+                if let dest = segue.destinationController as? SponsorController {
+                    dest.delegate = self
+                }
+            }
         }
     }
     
@@ -1530,7 +1534,7 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
         var tag = ""
         let result = try? (context.fetch(requestS) as![NSManagedObject])
         for i in result!{
-            if(((i.value(forKey: "name") as? String)) == nil){
+            if((((i.value(forKey: "name") as? String))==nil) || (((i.value(forKey: "images") as? String)==nil))){
                 context.delete(i)
                 //print("thing deleted")
                 do{

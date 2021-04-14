@@ -30,6 +30,7 @@ class SponsorController: NSViewController {
     var index = 0
     var imageURLs = [URL]()
     
+    weak var delegate : SponsorDelegate?
     let context = (NSApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Sponsors")
     
@@ -39,7 +40,7 @@ class SponsorController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        testImage.isHidden = true
         // Store URL Selected
         if let url = NSOpenPanel().selectImages {
             sImage.image = NSImage(contentsOf: url[0])
@@ -125,23 +126,21 @@ class SponsorController: NSViewController {
         if(imageURLs.count > index){
             image = imageURLs[index].absoluteString
             saveThis.setValue(image, forKey: "images")
-
-            
-            
-            do{
-                try context.save()
-                //print("Tag was saved!")
-            }
-            catch {
-                //print("Update failed, \(error)")
-            }
-            if(index < (imageURLs.count - 1)){
-                index+=1
-                sImage.image = NSImage(contentsOf: imageURLs[index])
-            }
         }
         //print(image)
-        
-        
+        do{
+            try context.save()
+            //print("Tag was saved!")
+        }
+        catch {
+            //print("Update failed, \(error)")
+        }
+        if(index < (imageURLs.count - 1)){
+            index+=1
+            sImage.image = NSImage(contentsOf: imageURLs[index])
+        }
+        if let delegate = delegate {
+            delegate.reloadSponsors()
+        }
     }
 }

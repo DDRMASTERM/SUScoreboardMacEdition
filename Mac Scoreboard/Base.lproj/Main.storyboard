@@ -1129,7 +1129,7 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="AddSImages:" target="XfG-lQ-9wD" id="XwZ-LU-CzJ"/>
-                                    <segue destination="1HE-Fg-Ncs" kind="popover" identifier="sponsorSegue" popoverAnchorView="mRp-PP-kTl" popoverBehavior="t" preferredEdge="maxY" id="voS-bR-JtS"/>
+                                    <segue destination="1HE-Fg-Ncs" kind="popover" identifier="SponsorSegue" popoverAnchorView="mRp-PP-kTl" popoverBehavior="t" preferredEdge="maxY" id="voS-bR-JtS"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GW9-wU-VXZ">
