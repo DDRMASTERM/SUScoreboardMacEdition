@@ -1315,7 +1315,8 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
         var iN = "Banjo & Kazooie1"
         var s = ""
         var t = ""
-        if(tag != "")
+        let result = try? (context.fetch(requestP) as![NSManagedObject])
+        if(tag != "" && result!.count > 0)
         {
             let result = try? (context.fetch(requestP) as![NSManagedObject])
             if(result?[index].value(forKey: "character") == nil){
