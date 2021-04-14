@@ -55,11 +55,15 @@ class SponsorController: NSViewController {
         
         //Test if items are found properly
         for i in result!{
-            if(((i.value(forKey: "name") as? String)) == nil){
+            
+            
+            
+            if((((i.value(forKey: "name") as? String))==nil) || (((i.value(forKey: "images") as? String)==nil))){
                 context.delete(i)
                 //print("thing deleted")
                 do{
                     try context.save()
+                    continue
                     //print("Name removed")
                 }
                 catch {
@@ -70,6 +74,7 @@ class SponsorController: NSViewController {
                 tag = (i.value(forKey: "name") as! String)
                 //print(tag)
             }
+            print((i.value(forKey: "images") as? String))
             let imageURL = URL(string: ((i.value(forKey: "images") as? String)!))
             let image = NSImage(contentsOf: imageURL!)
             testImage.image = image
@@ -115,23 +120,28 @@ class SponsorController: NSViewController {
             DataBaseHelper.shareInstance.saveImage(data: imageData)
             
         }*/
-        let image = imageURLs[index].absoluteString
-        //print(image)
-        saveThis.setValue(image, forKey: "images")
+        var image = ""
+        print (index)
+        if(imageURLs.count > index){
+            image = imageURLs[index].absoluteString
+            saveThis.setValue(image, forKey: "images")
 
+            
+            
+            do{
+                try context.save()
+                //print("Tag was saved!")
+            }
+            catch {
+                //print("Update failed, \(error)")
+            }
+            if(index < (imageURLs.count - 1)){
+                index+=1
+                sImage.image = NSImage(contentsOf: imageURLs[index])
+            }
+        }
+        //print(image)
         
-        
-        do{
-            try context.save()
-            //print("Tag was saved!")
-        }
-        catch {
-            //print("Update failed, \(error)")
-        }
-        if(index < (imageURLs.count - 1)){
-            index+=1
-            sImage.image = NSImage(contentsOf: imageURLs[index])
-        }
         
     }
 }
