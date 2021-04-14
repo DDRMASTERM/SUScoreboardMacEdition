@@ -1529,6 +1529,8 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
         p2Sponsor.removeAllItems()
         p2ASponsor.removeAllItems()
         p3Sponsor.removeAllItems()
+        sponsorNames.removeAll()
+        sponsorURLs.removeAll()
         
         
         var tag = ""
