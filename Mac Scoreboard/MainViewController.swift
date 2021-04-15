@@ -580,7 +580,8 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
     //Save Character and image selection for player and store elements into text files.
     @IBAction func UpdateFiles(_ sender: Any) {
         let result = try? (context.fetch(requestP) as![NSManagedObject])
-        
+        print(p1IString)
+        print(p2IString)
         //Store player selections for later re-use
         for i in result!{
             if(((i.value(forKey: "name") as? String)) != nil){
@@ -599,16 +600,14 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
                     }
                 }
                 if(tag == p2Tag.stringValue){
-                    if(!doubles){
+                    if(!doubles || flagsOption == 0){
                         i.setValue(p2Character.stringValue, forKey: "character")
+                        i.setValue(p2IString, forKey: "color")
                     }
                     else{
                         if(flagsOption == 0){
                             i.setValue(p4Character.stringValue, forKey: "character")
                         }
-                    }
-                    if(flagsOption == 0){
-                        i.setValue(p2IString, forKey: "color")
                     }
                     if(sponsorsOption > 0){
                         i.setValue(p2Sponsor.stringValue, forKey: "sponsor")
@@ -666,16 +665,16 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
         var string2 = p2Tag.stringValue
         var string2A = p2ATag.stringValue
         var string3 = p3Tag.stringValue
-        if(p1Sponsor.stringValue != "" && p1Sponsor.stringValue != "No Sponsor"){
+        if(p1Sponsor.stringValue != "" && p1Sponsor.stringValue != "No Sponsor" && sponsorsOption == 1){
             string1 = "\(p1Sponsor.stringValue) | \(p1Tag.stringValue)"
         }
-        if(p2Sponsor.stringValue != "" && p2Sponsor.stringValue != "No Sponsor"){
+        if(p2Sponsor.stringValue != "" && p2Sponsor.stringValue != "No Sponsor" && sponsorsOption == 1){
             string2 = "\(p2Sponsor.stringValue) | \(p2Tag.stringValue)"
         }
-        if(p2ASponsor.stringValue != "" && p2ASponsor.stringValue != "No Sponsor"){
+        if(p2ASponsor.stringValue != "" && p2ASponsor.stringValue != "No Sponsor" && sponsorsOption == 1){
             string2A = "\(p2ASponsor.stringValue) | \(p2ATag.stringValue)"
         }
-        if(p3Sponsor.stringValue != "" && p3Sponsor.stringValue != "No Sponsor"){
+        if(p3Sponsor.stringValue != "" && p3Sponsor.stringValue != "No Sponsor" && sponsorsOption == 1){
             string3 = "\(p3Sponsor.stringValue) | \(p3Tag.stringValue)"
         }
         if(doubles){
@@ -942,6 +941,9 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
             tempS = p1Twitter.stringValue
             p1Twitter.stringValue = p2Twitter.stringValue
             p2Twitter.stringValue = tempS
+            tempS = p1IString
+            p1IString = p2IString
+            p2IString = tempS
         }
         else{ //doubles is selected
             if(flagsOption == 0){ //flags disabled
@@ -955,6 +957,12 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
                 p2Character.stringValue = tempS
                 p1Image.image = p3Image.image
                 p3Image.image = tempI
+                tempS = p1IString
+                p1IString = p3IString
+                p3IString = tempS
+                tempS = p2IString
+                p2IString = p2AIString
+                p2AIString = tempS
             }
             else{ //flags enabled
                 tempS = p1Character.stringValue
