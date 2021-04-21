@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Mac Scoreboard" id="1Xt-HY-uBw">
+                            <menuItem title="SU Scoreboard Mac" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Mac Scoreboard" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="SU Scoreboard Mac" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Mac Scoreboard" id="5kV-Vb-QxS">
+                                        <menuItem title="About SU Scoreboard Mac" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide Mac Scoreboard" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide SU Scoreboard Mac" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit Mac Scoreboard" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit SU Scoreboard Mac" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Mac Scoreboard Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="SU Scoreboard Mac Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -711,7 +710,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xfl-2s-Vlq">
-                                <rect key="frame" x="305" y="120" width="19" height="28"/>
+                                <rect key="frame" x="305" y="119" width="19" height="28"/>
                                 <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="xxi-7A-JRF"/>
                                 <connections>
                                     <action selector="g1di:" target="XfG-lQ-9wD" id="EGI-bZ-OgO"/>
@@ -842,7 +841,7 @@
                                 </connections>
                             </comboBox>
                             <comboBox verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6K6-UV-v0P">
-                                <rect key="frame" x="21" y="195" width="139" height="25"/>
+                                <rect key="frame" x="21" y="195" width="139" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="U3y-XP-Ncg"/>
                                 </constraints>
@@ -1599,7 +1598,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="egt-j8-8Jv">
-                                <rect key="frame" x="175" y="205" width="101" height="32"/>
+                                <rect key="frame" x="174" y="205" width="102" height="32"/>
                                 <buttonCell key="cell" type="push" title="Add Round" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aID-6v-swf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1641,7 +1640,7 @@
                                 </popUpButtonCell>
                             </popUpButton>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q9m-9k-FUF">
-                                <rect key="frame" x="163" y="116" width="125" height="32"/>
+                                <rect key="frame" x="162" y="116" width="126" height="32"/>
                                 <buttonCell key="cell" type="push" title="Remove Round" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="N2c-wO-Dw0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
