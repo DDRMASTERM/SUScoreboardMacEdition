@@ -11,4 +11,5 @@ in the chosen folder after clicking update. Additional functions like sponsors, 
 
 This project is open source, so if you wish to add or change any functions manually, feel free.
 
+If you add images to the assets, name each one in the following format: Character# such as Ness1, Luigi5, etc.
 
