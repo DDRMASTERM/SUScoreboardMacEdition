@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Addedbrackets" representedClassName="Addedbrackets" syncable="YES" codeGenerationType="class">
         <attribute name="bracket" optional="YES" attributeType="String"/>
     </entity>
@@ -11,28 +11,27 @@
     </entity>
     <entity name="Options" representedClassName="Options" syncable="YES" codeGenerationType="class">
         <attribute name="c" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="d" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="f" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="s" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sep" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="si" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="t" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
         <attribute name="character" optional="YES" attributeType="String"/>
         <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pronouns" optional="YES" attributeType="String"/>
         <attribute name="sponsor" optional="YES" attributeType="String"/>
         <attribute name="twitter" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Pronouns" representedClassName="Pronouns" syncable="YES" codeGenerationType="class">
+        <attribute name="pronouns" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Sponsors" representedClassName="Sponsors" syncable="YES" codeGenerationType="class">
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="images" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <elements>
-        <element name="Addedbrackets" positionX="-36" positionY="18" width="128" height="44"/>
-        <element name="Addedrounds" positionX="-18" positionY="36" width="128" height="44"/>
-        <element name="FileLocation" positionX="-36" positionY="18" width="128" height="44"/>
-        <element name="Player" positionX="-54" positionY="-9" width="128" height="104"/>
-        <element name="Sponsors" positionX="-36" positionY="18" width="128" height="74"/>
-        <element name="Options" positionX="-27" positionY="36" width="128" height="14"/>
-    </elements>
 </model>

@@ -13,8 +13,8 @@
 		870F2C2625E99B3900FC14C7 /* Mac_Scoreboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 870F2C1F25E99B3900FC14C7 /* Mac_Scoreboard.xcdatamodeld */; };
 		870F2C2725E99B3900FC14C7 /* RoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F2C2125E99B3900FC14C7 /* RoundController.swift */; };
 		870F2C2825E99B3900FC14C7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F2C2225E99B3900FC14C7 /* AddViewController.swift */; };
-		870F2C2925E99B3900FC14C7 /* RemoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F2C2325E99B3900FC14C7 /* RemoveViewController.swift */; };
 		870F2C3425E9A03400FC14C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F2C3325E9A03400FC14C7 /* MainViewController.swift */; };
+		874A4936286D43CE004576C4 /* RemoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874A4935286D4144004576C4 /* RemoveViewController.swift */; };
 		87778FB62613A7E70066C9F5 /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87778FB52613A7E70066C9F5 /* OptionsController.swift */; };
 		87840C1825E9998E007D5FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87840C1725E9998E007D5FD5 /* AppDelegate.swift */; };
 		87840C1D25E9998E007D5FD5 /* Mac_Scoreboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87840C1B25E9998E007D5FD5 /* Mac_Scoreboard.xcdatamodeld */; };
@@ -49,8 +49,8 @@
 		870F2C2025E99B3900FC14C7 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		870F2C2125E99B3900FC14C7 /* RoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundController.swift; sourceTree = "<group>"; };
 		870F2C2225E99B3900FC14C7 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		870F2C2325E99B3900FC14C7 /* RemoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveViewController.swift; sourceTree = "<group>"; };
 		870F2C3325E9A03400FC14C7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		874A4935286D4144004576C4 /* RemoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveViewController.swift; sourceTree = "<group>"; };
 		87778FB52613A7E70066C9F5 /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		87840C1425E9998E007D5FD5 /* SU Scoreboard Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SU Scoreboard Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87840C1725E9998E007D5FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,11 +119,11 @@
 				870F2C2225E99B3900FC14C7 /* AddViewController.swift */,
 				870F2C1D25E99B3900FC14C7 /* BracketController.swift */,
 				870F2C1F25E99B3900FC14C7 /* Mac_Scoreboard.xcdatamodeld */,
-				870F2C2325E99B3900FC14C7 /* RemoveViewController.swift */,
 				870F2C2125E99B3900FC14C7 /* RoundController.swift */,
 				870F2C1E25E99B3900FC14C7 /* stream_files */,
 				87840C1725E9998E007D5FD5 /* AppDelegate.swift */,
 				87840C1E25E9998E007D5FD5 /* Assets.xcassets */,
+				874A4935286D4144004576C4 /* RemoveViewController.swift */,
 				870F2C3325E9A03400FC14C7 /* MainViewController.swift */,
 				87840C2025E9998E007D5FD5 /* Main.storyboard */,
 				87778FB52613A7E70066C9F5 /* OptionsController.swift */,
@@ -285,9 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87840C1825E9998E007D5FD5 /* AppDelegate.swift in Sources */,
-				870F2C2925E99B3900FC14C7 /* RemoveViewController.swift in Sources */,
 				870F2C2825E99B3900FC14C7 /* AddViewController.swift in Sources */,
 				87778FB62613A7E70066C9F5 /* OptionsController.swift in Sources */,
+				874A4936286D43CE004576C4 /* RemoveViewController.swift in Sources */,
 				870F2C2425E99B3900FC14C7 /* BracketController.swift in Sources */,
 				87840C1D25E9998E007D5FD5 /* Mac_Scoreboard.xcdatamodeld in Sources */,
 				870EA55925F72D7400B9E913 /* ImageController.swift in Sources */,

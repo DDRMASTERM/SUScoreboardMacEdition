@@ -15,13 +15,16 @@ protocol AddDelegate : NSObjectProtocol{
 class AddViewController: NSViewController, NSTextFieldDelegate  {
     
     weak var delegate : AddDelegate?
-    @IBOutlet weak var test: NSTextField!
+    @IBOutlet weak var pronounField: NSTextField!
     @IBOutlet weak var tagField: NSTextField!
-    @IBOutlet weak var addButton: NSButton!
+    @IBOutlet weak var pronoun: NSTextField!
+    @IBOutlet weak var pronounButton: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         tagField.isEditable = true
-        test.stringValue = ""
+        /*pronounField.isHidden = true
+        pronoun.isHidden = true
+        pronounButton.isHidden = true*/
     }
 
     override var representedObject: Any? {
@@ -47,8 +50,25 @@ class AddViewController: NSViewController, NSTextFieldDelegate  {
             print("Update failed, \(error)")
         } //*/
         reload(name)
-        
     }
+    
+    @IBAction func AddPronoun(_ sender: Any) {
+        let pronoun = pronoun.stringValue
+        print(pronoun)
+        let context = (NSApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Pronouns", in: context)
+        let saveThis = NSManagedObject(entity: entity!, insertInto: context)
+        saveThis.setValue(pronoun.lowercased(), forKey: "pronouns")
+        do{
+            try context.save()
+            //print("Tag was saved!")
+        }
+        catch {
+            print("Update failed, \(error)")
+        } //*/
+        reload(pronoun)
+    }
+    
     
     //Trigger loadMenus for MainViewController
     func reload(_ name: String){
