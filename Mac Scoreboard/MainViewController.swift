@@ -1028,6 +1028,8 @@ class MainViewController: NSViewController, NSPopoverDelegate, FileManagerDelega
             p3Image.image = data1
             p3IString = data3
         }
+        
+        dynamicUpdate()
     }
     
     //Delegate functions to ensure menus reload after actions in other view controllers

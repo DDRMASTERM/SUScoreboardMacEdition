@@ -46,8 +46,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1287"
-            endingLineNumber = "1287"
+            startingLineNumber = "1289"
+            endingLineNumber = "1289"
             landmarkName = "loadMenus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1289"
-            endingLineNumber = "1289"
+            startingLineNumber = "1291"
+            endingLineNumber = "1291"
             landmarkName = "loadMenus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1291"
-            endingLineNumber = "1291"
+            startingLineNumber = "1293"
+            endingLineNumber = "1293"
             landmarkName = "loadMenus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -670,8 +670,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1518"
-            endingLineNumber = "1518"
+            startingLineNumber = "1520"
+            endingLineNumber = "1520"
             landmarkName = "loadSponsors()"
             landmarkType = "7">
          </BreakpointContent>
@@ -864,8 +864,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "484"
             endingLineNumber = "484"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
+            landmarkName = "p1Select(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -880,8 +880,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "430"
             endingLineNumber = "430"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
+            landmarkName = "p3Clicked(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -896,8 +896,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "389"
             endingLineNumber = "389"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
+            landmarkName = "P2clicked(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -928,8 +928,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "893"
             endingLineNumber = "893"
-            landmarkName = "MainViewController"
-            landmarkType = "3">
+            landmarkName = "c1SponsorSelect(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -958,8 +958,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1892"
-            endingLineNumber = "1892"
+            startingLineNumber = "1894"
+            endingLineNumber = "1894"
             landmarkName = "update()"
             landmarkType = "7">
          </BreakpointContent>
@@ -974,8 +974,8 @@
             filePath = "Mac Scoreboard/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1897"
-            endingLineNumber = "1897"
+            startingLineNumber = "1899"
+            endingLineNumber = "1899"
             landmarkName = "update()"
             landmarkType = "7">
          </BreakpointContent>

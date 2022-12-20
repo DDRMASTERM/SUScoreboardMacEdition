@@ -2360,6 +2360,6 @@
         <segue reference="os8-66-Wni"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="NSActionTemplate" width="15" height="15"/>
+        <image name="NSActionTemplate" width="20" height="20"/>
     </resources>
 </document>
